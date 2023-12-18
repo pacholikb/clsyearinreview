@@ -13,8 +13,8 @@ df['connected_at'] = pd.to_datetime(df['connected_at'])
 employees = df['account_owner'].unique().tolist()
 employees.insert(0, 'All')
 
-st.title("CLS 2023 Year in Review")
-st.markdown("Since April 2023 LinkedIn has become ripe with opportunities. The graph below showcases weekly connections. Remarkable YoY growth stats; Suzie a 284% increase, Chris a 360% increase, Sharon a 155% increase, Sam a 287% increase with 7,431 total new connections added overall")
+st.title("CLS: 2023 Year in Review")
+st.markdown("The graph below showcases weekly new connections in 2023. Remarkable YoY growth stats; Suzie a 284% increase, Chris a 360% increase, Sharon a 155% increase, Sam a 287% increase with 7,431 total new connections added overall")
 st.markdown("As we look to 2024, even with conservative estimates (using the previous 6 month av. weekly connections) each account should more than double again.")
 
 col1, col2, col3 = st.columns(3)
